@@ -1,8 +1,8 @@
 %% TOS_gapeEffect
 
-% This scripts calculates the effect of gape on joint reaction forces and
-% the position of the resultant muscle force with respect to the triangle
-% of support, due to the L-T curve
+% This script calculates the effect of variation in muscle force
+% capabilities due to gape (as a consequence of the length-tension curve)
+% on JRFs and the position of the RMF with respect to the ToS.
 %
 % This script needs:
 %   LANDMARK DATA: 

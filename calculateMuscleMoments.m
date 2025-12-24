@@ -1,4 +1,21 @@
-%% calculate the muscle moments and lengths at different gape angles
+%% calculateMuscleMoments
+
+% This script calculates the moment arms and relative lengths of the muscle
+% segments of the three jaw addutor muscles at different gape angles.
+%
+% The script requires:
+%   BONE MODEL and ROTATION DATA:
+%       mat files that contains the 3D triangulated cranium and mandible
+%       models and the rotation matrices for each gape angle. These data
+%       are exported from the 'modelPreparation' MATLAB app
+%   MUSCLE DATA:
+%       mat file that contains the position of the three jaw adductor
+%       muscles at occlusion (0-degree gape). This file is obtained from
+%       the 'muscleSelection' MATLAB app
+% 
+% The script exports a 'MuscleMoments_*.mat' file that contains the position,
+% relative lengths, and moment arms of the jaw adductor muscles.
+
 clear
 clc
 

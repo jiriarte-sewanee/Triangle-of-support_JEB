@@ -1,6 +1,6 @@
 %% TOS_muscleForceEffect
 
-% This scripts calculates the effect of differences in relative force of
+% This script calculates the effect of differences in relative force of
 % the three jaw adductor muscles on joint reaction forces and the position
 % of the resultant muscle force with respect to the triangle of support
 %

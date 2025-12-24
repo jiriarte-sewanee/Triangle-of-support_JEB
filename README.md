@@ -3,7 +3,8 @@ MATLAB code used for: Triangle of Support and Joint-reaction forces in the prima
 system
 
 This repository contains the most important files in the main folder and several accessory
-functions in the 'functions' folder.
+functions in the 'functions' folder. We also provide an 'Examples' folder with data from 
+two sample species to test the code.
 
 The main folder contains the code used to calculate the joint reaction forces (JRFs) and 
 the position of the resultant muscle force (RMF) with respect to the triangle of support 
@@ -34,9 +35,8 @@ the "calculateMuscleMoments.m" script, which is available in the main folder.
 - **LANDMARK data** pp file that contains the cartesian coordinates of the left and right 
 TMJs and the teeth of the 3D model. This file is exported directly from Meshlab (https://www.meshlab.net/).
 
-
-To run the scripts above, 
 ---
+
 **NOTE 1:** The 'ToS_gapeEffect' script requires to load the 'normalized_LTcurve.mat' file
 provided in the main folder. You'll have to change the location of the folder in the line 94 
 of the 'ToS_gapeEffect' script to the specific folder in your computer.

@@ -19,7 +19,7 @@ position of the RMF with respect to the ToS.
 %--------------
 
 **IMPORTANT:** Each of these scripts requires some data that needs to be calculated beforehand. 
-Also, the code assumes that all required files are in the current MATLAB folder.
+Additionally, the code assumes that all necessary files are located in the current MATLAB folder.
 
 - **BONE MODEL data:** MATLAB file that contains the 3D triangulated cranium and mandible models. 
 This file is exported from the 'modelPreparation' MATLAB app available from 
@@ -40,14 +40,16 @@ TMJs and the teeth of the 3D model. This file is exported directly from Meshlab 
 provided in the main folder. You'll have to change the location of the folder on line 94 
 of the 'ToS_gapeEffect' script to the specific folder on your computer.
 
+**NOTE 2:** Every one of the main scripts calls functions from the geometry processing library **matGeom**. You can download the library from https://github.com/mattools/matGeom/.
 
-**NOTE 2:** To run the 'calculateMuscleMoment' script, we need the 'intersectPlaneSurf'
+
+**NOTE 3:** To run the 'calculateMuscleMoment' script, we need the 'intersectPlaneSurf'
 function. You can download the function here:
 https://www.mathworks.com/matlabcentral/fileexchange/32256-intersectplanesurf-ii
 Make sure to compile the attached cpp file as: 
 `mex('IntersectPlaneTriangle.cpp','-v')`
 
-**NOTE 3:** The function 'directionalRayTriangleIntersect' calls the mex function
+**NOTE 4:** The function 'directionalRayTriangleIntersect' calls the mex function
 'rayTriangleIntersection_mlc_mex'. The compiled mex version is substantially faster than
 the original code. We provide compiled mex files for Windows (.mexw64), for macOS
 with Intel processor (.mexmaci64), and for macOS with Apple silicon processor

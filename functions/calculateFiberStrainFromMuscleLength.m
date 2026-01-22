@@ -47,7 +47,7 @@ pa_constantWidth = acosd((FiberLength.*cosd(pennationAngle)...
 b_squared = (cosd(pennationAngle) + (diffMuscleLength./FiberLength)).^2 ;
 e_variableWidth = sqrt(b_squared + (sind(pennationAngle.*2)).^2./(4.*b_squared)) ;
 pa_variableWidth = acosd((FiberLength.*cosd(pennationAngle)...
-    + diffMuscleLength)./(e_constantArea.*FiberLength) ) ;
+    + diffMuscleLength)./(e_variableWidth.*FiberLength) ) ;
 
 %-------------------------------------------------------------------------%
 % Create the output files
